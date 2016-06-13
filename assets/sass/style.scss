@@ -250,16 +250,23 @@ section {
   .portfolio {
     .imgPortfolio {
       padding: 0;
-      margin: 20px 0;
+      margin: 20px;
       overflow: hidden;
       border-radius: 5px;
       box-shadow: 0 40px 50px -40px black;
+      &:first-of-type {
+        margin-right: 10px;
+      }
+      &:last-of-type {
+        margin-left: 10px;
+      }
       img {
         width: 100%;
         text-align: center;
+        opacity: 0.7;
         transition: transform 0.4s ease;
         &:hover {
-          opacity: 0.7;
+          opacity: 1;
           transform: scale(1.1);
         }
       }
